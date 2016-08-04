@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1343CC0F8CE07798855D884EEE9EEFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		19BD7A9F05290B189872C621393A6AA8 /* Pods-HJToast_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A03F77263946C39ED8A5D0B5F9A310ED /* Pods-HJToast_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45E3C49540CD7F5C34732F05F79F0EC1 /* HJToast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7938F37ABC41741B86BA424F80370F /* HJToast-dummy.m */; };
+		4D70CEE90F04D49148595CE199845F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6794ACAE0357D31D0AF242975D8677FF /* Pods-HJToast_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A48824D726D8E929B70B1A72FD5CB0A /* Pods-HJToast_Tests-dummy.m */; };
+		6FAE3783DB429CF5EF60CB23B23C7A29 /* Pods-HJToast_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D24740F29FFEDAB4A036A4A8D8746261 /* Pods-HJToast_Example-dummy.m */; };
+		713B9066E7C391630AEB94B34271B682 /* Pods-HJToast_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 121B10FDF890A88DE711F28C89576E10 /* Pods-HJToast_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		976C07BB8A932B47E8A88DB368700251 /* HJToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC2E1B3E6FAAD599FAF2192F96AB4C8 /* HJToast.swift */; };
+		CAE88BE50DC810978C2D9D036E248683 /* HJToast-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4D87378034653592D3FC8849F3AD67 /* HJToast-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFFD38E81061E4D7F540872CA4C8338A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		206691CE1945BCAE3B87229FCD6A6CD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7CC6F3B04968E619259B4142F61E3ED;
+			remoteInfo = HJToast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		121B10FDF890A88DE711F28C89576E10 /* Pods-HJToast_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJToast_Example-umbrella.h"; sourceTree = "<group>"; };
+		1A42D3884705E2A2EC691DE8F2E1121E /* Pods-HJToast_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJToast_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A48824D726D8E929B70B1A72FD5CB0A /* Pods-HJToast_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJToast_Tests-dummy.m"; sourceTree = "<group>"; };
+		32E41730A13F460017E86D4B56AD7628 /* HJToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HJToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		378772906E9B52F29287EEEF70323AE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC2E1B3E6FAAD599FAF2192F96AB4C8 /* HJToast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HJToast.swift; sourceTree = "<group>"; };
+		3E36353862EF6F2A65BC4A0388745735 /* Pods-HJToast_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJToast_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		400AD541974B18B62050F5BEFB71BA16 /* Pods-HJToast_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJToast_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		466FDF18622156635CF6E5668CDF07CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E612E9CF420218CAF646F32CE1714B0 /* Pods_HJToast_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJToast_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5032A57A799A6321B31E22E9985055F8 /* Pods-HJToast_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJToast_Example.release.xcconfig"; sourceTree = "<group>"; };
+		559065E72BF2CA4A682271786774BA80 /* Pods-HJToast_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HJToast_Tests.modulemap"; sourceTree = "<group>"; };
+		5DA84A82E4E259CCE35F9731FB360D0F /* Pods-HJToast_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJToast_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		61EE2BD0E8CAAF186FD9DDA244CA39F2 /* Pods-HJToast_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HJToast_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7A7938F37ABC41741B86BA424F80370F /* HJToast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HJToast-dummy.m"; sourceTree = "<group>"; };
+		90D85211384BED55D9FC4AD5E9968552 /* Pods-HJToast_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJToast_Example-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		948C8008A4FD6736789D581A93EFBEC8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99E668598BF56732FD63C30E5706004A /* HJToast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HJToast.modulemap; sourceTree = "<group>"; };
+		9AD4800652CF99BC79460B4758819153 /* Pods_HJToast_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJToast_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03F77263946C39ED8A5D0B5F9A310ED /* Pods-HJToast_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HJToast_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A99C3128398B2EF23B6485B3E9C5EAD0 /* Pods-HJToast_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJToast_Example-resources.sh"; sourceTree = "<group>"; };
+		AB41E7383EC7A8E3BB664C9D68586F2A /* Pods-HJToast_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HJToast_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6EECC81CC6A80A0616A90C65CDDAD7A /* HJToast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HJToast.xcconfig; sourceTree = "<group>"; };
+		B7F922372B3E994B3EAC75AD64391591 /* Pods-HJToast_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HJToast_Tests-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D24740F29FFEDAB4A036A4A8D8746261 /* Pods-HJToast_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HJToast_Example-dummy.m"; sourceTree = "<group>"; };
+		E2D3EA47307DECE50A8AB04C3D687BA4 /* Pods-HJToast_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJToast_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E837C4492FAB52E647223FC447D33675 /* HJToast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HJToast-prefix.pch"; sourceTree = "<group>"; };
+		EB4D87378034653592D3FC8849F3AD67 /* HJToast-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HJToast-umbrella.h"; sourceTree = "<group>"; };
+		ED44D7BDED91FAF3C6C2A14A140D003B /* Pods-HJToast_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HJToast_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EFE67C1AD0573D19CC10365EEA811D9C /* Pods-HJToast_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HJToast_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E155CF53B1A4F63C357C66C7963D3BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D70CEE90F04D49148595CE199845F97 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0585DEAFD02AA99D590DDA1E9BD2BEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1343CC0F8CE07798855D884EEE9EEFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FE610CC93BC41CEB07448C92E6D022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD38E81061E4D7F540872CA4C8338A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DA4F7A8889D21204D31C2061C73039B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32E41730A13F460017E86D4B56AD7628 /* HJToast.framework */,
+				9AD4800652CF99BC79460B4758819153 /* Pods_HJToast_Example.framework */,
+				4E612E9CF420218CAF646F32CE1714B0 /* Pods_HJToast_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BAEB1958DD1006E954BD54FAF66934AA /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				3DA4F7A8889D21204D31C2061C73039B /* Products */,
+				F0AA0D4AC4BE28FE6E2695DD54B8FE97 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FE9E3422A5A516497B7ABCDADDC6645 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99E668598BF56732FD63C30E5706004A /* HJToast.modulemap */,
+				B6EECC81CC6A80A0616A90C65CDDAD7A /* HJToast.xcconfig */,
+				7A7938F37ABC41741B86BA424F80370F /* HJToast-dummy.m */,
+				E837C4492FAB52E647223FC447D33675 /* HJToast-prefix.pch */,
+				EB4D87378034653592D3FC8849F3AD67 /* HJToast-umbrella.h */,
+				378772906E9B52F29287EEEF70323AE5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HJToast";
+			sourceTree = "<group>";
+		};
+		823695436E2057EAE8CF7ABAD147CC19 /* HJToast */ = {
+			isa = PBXGroup;
+			children = (
+				C13C96809DEBFAC32E4A75C0705143BB /* Classes */,
+			);
+			path = HJToast;
+			sourceTree = "<group>";
+		};
+		8E125268F2D996650BA80224D1DA7DF2 /* Pods-HJToast_Example */ = {
+			isa = PBXGroup;
+			children = (
+				466FDF18622156635CF6E5668CDF07CC /* Info.plist */,
+				EFE67C1AD0573D19CC10365EEA811D9C /* Pods-HJToast_Example.modulemap */,
+				AB41E7383EC7A8E3BB664C9D68586F2A /* Pods-HJToast_Example-acknowledgements.markdown */,
+				ED44D7BDED91FAF3C6C2A14A140D003B /* Pods-HJToast_Example-acknowledgements.plist */,
+				D24740F29FFEDAB4A036A4A8D8746261 /* Pods-HJToast_Example-dummy.m */,
+				90D85211384BED55D9FC4AD5E9968552 /* Pods-HJToast_Example-frameworks.sh */,
+				A99C3128398B2EF23B6485B3E9C5EAD0 /* Pods-HJToast_Example-resources.sh */,
+				121B10FDF890A88DE711F28C89576E10 /* Pods-HJToast_Example-umbrella.h */,
+				5DA84A82E4E259CCE35F9731FB360D0F /* Pods-HJToast_Example.debug.xcconfig */,
+				5032A57A799A6321B31E22E9985055F8 /* Pods-HJToast_Example.release.xcconfig */,
+			);
+			name = "Pods-HJToast_Example";
+			path = "Target Support Files/Pods-HJToast_Example";
+			sourceTree = "<group>";
+		};
+		9CF83784D4F32E8F77EC74090FF685F2 /* Pods-HJToast_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				948C8008A4FD6736789D581A93EFBEC8 /* Info.plist */,
+				559065E72BF2CA4A682271786774BA80 /* Pods-HJToast_Tests.modulemap */,
+				1A42D3884705E2A2EC691DE8F2E1121E /* Pods-HJToast_Tests-acknowledgements.markdown */,
+				E2D3EA47307DECE50A8AB04C3D687BA4 /* Pods-HJToast_Tests-acknowledgements.plist */,
+				2A48824D726D8E929B70B1A72FD5CB0A /* Pods-HJToast_Tests-dummy.m */,
+				3E36353862EF6F2A65BC4A0388745735 /* Pods-HJToast_Tests-frameworks.sh */,
+				B7F922372B3E994B3EAC75AD64391591 /* Pods-HJToast_Tests-resources.sh */,
+				A03F77263946C39ED8A5D0B5F9A310ED /* Pods-HJToast_Tests-umbrella.h */,
+				400AD541974B18B62050F5BEFB71BA16 /* Pods-HJToast_Tests.debug.xcconfig */,
+				61EE2BD0E8CAAF186FD9DDA244CA39F2 /* Pods-HJToast_Tests.release.xcconfig */,
+			);
+			name = "Pods-HJToast_Tests";
+			path = "Target Support Files/Pods-HJToast_Tests";
+			sourceTree = "<group>";
+		};
+		BAEB1958DD1006E954BD54FAF66934AA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC588B36A1605547D141904E027A9774 /* HJToast */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C13C96809DEBFAC32E4A75C0705143BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DC2E1B3E6FAAD599FAF2192F96AB4C8 /* HJToast.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DC588B36A1605547D141904E027A9774 /* HJToast */ = {
+			isa = PBXGroup;
+			children = (
+				823695436E2057EAE8CF7ABAD147CC19 /* HJToast */,
+				7FE9E3422A5A516497B7ABCDADDC6645 /* Support Files */,
+			);
+			name = HJToast;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F0AA0D4AC4BE28FE6E2695DD54B8FE97 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E125268F2D996650BA80224D1DA7DF2 /* Pods-HJToast_Example */,
+				9CF83784D4F32E8F77EC74090FF685F2 /* Pods-HJToast_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09A973BEBA47A0962517D9894439F1F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BD7A9F05290B189872C621393A6AA8 /* Pods-HJToast_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		669157D120E13046ACB7CB64FC8952DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				713B9066E7C391630AEB94B34271B682 /* Pods-HJToast_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE903FBDFE33F1AD990AF396EE0FD097 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE88BE50DC810978C2D9D036E248683 /* HJToast-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		242C9FD73C85460D109B0E712C6189CE /* Pods-HJToast_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B9B9772246DA1E543B2B25948BF40F /* Build configuration list for PBXNativeTarget "Pods-HJToast_Example" */;
+			buildPhases = (
+				D515E9D0C106A1E54BB561D48D082B74 /* Sources */,
+				F4FE610CC93BC41CEB07448C92E6D022 /* Frameworks */,
+				669157D120E13046ACB7CB64FC8952DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F716D3DDF8347A0D7EC63E1A7C1DDC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-HJToast_Example";
+			productName = "Pods-HJToast_Example";
+			productReference = 9AD4800652CF99BC79460B4758819153 /* Pods_HJToast_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7A02D9527C9907C474F26FF79E6BE50 /* Pods-HJToast_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 131D10A3F63FDB37B703B2BA219738B5 /* Build configuration list for PBXNativeTarget "Pods-HJToast_Tests" */;
+			buildPhases = (
+				25A559002DC929667BAB4787BAC424D8 /* Sources */,
+				C0585DEAFD02AA99D590DDA1E9BD2BEE /* Frameworks */,
+				09A973BEBA47A0962517D9894439F1F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HJToast_Tests";
+			productName = "Pods-HJToast_Tests";
+			productReference = 4E612E9CF420218CAF646F32CE1714B0 /* Pods_HJToast_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7CC6F3B04968E619259B4142F61E3ED /* HJToast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF49B6CA8A226D4861302A088916528 /* Build configuration list for PBXNativeTarget "HJToast" */;
+			buildPhases = (
+				1A0AAAE8869FAB8B3AEAEDD775B668D2 /* Sources */,
+				2E155CF53B1A4F63C357C66C7963D3BF /* Frameworks */,
+				CE903FBDFE33F1AD990AF396EE0FD097 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJToast;
+			productName = HJToast;
+			productReference = 32E41730A13F460017E86D4B56AD7628 /* HJToast.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3DA4F7A8889D21204D31C2061C73039B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7CC6F3B04968E619259B4142F61E3ED /* HJToast */,
+				242C9FD73C85460D109B0E712C6189CE /* Pods-HJToast_Example */,
+				F7A02D9527C9907C474F26FF79E6BE50 /* Pods-HJToast_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0AAAE8869FAB8B3AEAEDD775B668D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E3C49540CD7F5C34732F05F79F0EC1 /* HJToast-dummy.m in Sources */,
+				976C07BB8A932B47E8A88DB368700251 /* HJToast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A559002DC929667BAB4787BAC424D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6794ACAE0357D31D0AF242975D8677FF /* Pods-HJToast_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D515E9D0C106A1E54BB561D48D082B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAE3783DB429CF5EF60CB23B23C7A29 /* Pods-HJToast_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F716D3DDF8347A0D7EC63E1A7C1DDC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HJToast;
+			target = F7CC6F3B04968E619259B4142F61E3ED /* HJToast */;
+			targetProxy = 206691CE1945BCAE3B87229FCD6A6CD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3396EB9A1D7E47E577D936C8FC661E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA84A82E4E259CCE35F9731FB360D0F /* Pods-HJToast_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJToast_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HJToast_Example/Pods-HJToast_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HJToast_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5AE40A3A3490F7BDC8E5F6C88DE345E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5032A57A799A6321B31E22E9985055F8 /* Pods-HJToast_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJToast_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HJToast_Example/Pods-HJToast_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HJToast_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6196BD99CAF9E593737D0476B8A0D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EECC81CC6A80A0616A90C65CDDAD7A /* HJToast.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HJToast/HJToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HJToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HJToast/HJToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HJToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C55EB5D265D4BFE17FE0D2CF38C0AD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400AD541974B18B62050F5BEFB71BA16 /* Pods-HJToast_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJToast_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HJToast_Tests/Pods-HJToast_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HJToast_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DA9A268295CCC786BC8BF44E5A3FB0E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61EE2BD0E8CAAF186FD9DDA244CA39F2 /* Pods-HJToast_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HJToast_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HJToast_Tests/Pods-HJToast_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HJToast_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6D40C838FB09E228901B9AF025C169E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EECC81CC6A80A0616A90C65CDDAD7A /* HJToast.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HJToast/HJToast-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HJToast/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HJToast/HJToast.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HJToast;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		131D10A3F63FDB37B703B2BA219738B5 /* Build configuration list for PBXNativeTarget "Pods-HJToast_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55EB5D265D4BFE17FE0D2CF38C0AD2B /* Debug */,
+				DA9A268295CCC786BC8BF44E5A3FB0E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31B9B9772246DA1E543B2B25948BF40F /* Build configuration list for PBXNativeTarget "Pods-HJToast_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3396EB9A1D7E47E577D936C8FC661E8F /* Debug */,
+				5AE40A3A3490F7BDC8E5F6C88DE345E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF49B6CA8A226D4861302A088916528 /* Build configuration list for PBXNativeTarget "HJToast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D40C838FB09E228901B9AF025C169E /* Debug */,
+				A6196BD99CAF9E593737D0476B8A0D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

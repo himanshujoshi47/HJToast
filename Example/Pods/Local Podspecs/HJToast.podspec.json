@@ -1,0 +1,22 @@
+{
+  "name": "HJToast",
+  "version": "0.1.0",
+  "summary": "A short description of HJToast.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/HJToast",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Himanshu Joshi": "himanshujoshi47@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/HJToast.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HJToast/Classes/**/*"
+}

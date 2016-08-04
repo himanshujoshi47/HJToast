@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="HJToast_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +16,45 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoH-pZ-AWj">
+                                <rect key="frame" x="251" y="50" width="99" height="30"/>
+                                <state key="normal" title="Show Themed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-zQ-bzc">
+                                <rect key="frame" x="242" y="95" width="116" height="30"/>
+                                <state key="normal" title="Custom Duration"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q7-QN-xls">
+                                <rect key="frame" x="245" y="140" width="111" height="30"/>
+                                <state key="normal" title="Left Component"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-7l-kWx">
+                                <rect key="frame" x="240" y="185" width="120" height="30"/>
+                                <state key="normal" title="Right Component"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smj-av-aYT">
+                                <rect key="frame" x="223" y="230" width="154" height="30"/>
+                                <state key="normal" title="Left-Right Component"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F5w-7l-kWx" firstAttribute="top" secondItem="3Q7-QN-xls" secondAttribute="bottom" constant="15" id="0KA-aA-POt"/>
+                            <constraint firstItem="qoH-pZ-AWj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="1AY-yL-C6V"/>
+                            <constraint firstItem="Smj-av-aYT" firstAttribute="top" secondItem="F5w-7l-kWx" secondAttribute="bottom" constant="15" id="3Zr-vq-GWr"/>
+                            <constraint firstItem="3Q7-QN-xls" firstAttribute="top" secondItem="Kat-zQ-bzc" secondAttribute="bottom" constant="15" id="3rK-NF-13d"/>
+                            <constraint firstItem="Smj-av-aYT" firstAttribute="top" secondItem="F5w-7l-kWx" secondAttribute="bottom" constant="15" id="4N9-ex-oNI"/>
+                            <constraint firstItem="F5w-7l-kWx" firstAttribute="top" secondItem="3Q7-QN-xls" secondAttribute="bottom" constant="15" id="CpW-as-1sO"/>
+                            <constraint firstItem="3Q7-QN-xls" firstAttribute="top" secondItem="Kat-zQ-bzc" secondAttribute="bottom" constant="15" id="Hnl-vk-YYb"/>
+                            <constraint firstItem="3Q7-QN-xls" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="QzQ-Dh-GZU"/>
+                            <constraint firstItem="Smj-av-aYT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="daO-rU-Ct9"/>
+                            <constraint firstItem="Kat-zQ-bzc" firstAttribute="top" secondItem="qoH-pZ-AWj" secondAttribute="bottom" constant="15" id="gsW-vm-HfQ"/>
+                            <constraint firstItem="qoH-pZ-AWj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="tIu-gv-w1Z"/>
+                            <constraint firstItem="Kat-zQ-bzc" firstAttribute="top" secondItem="qoH-pZ-AWj" secondAttribute="bottom" constant="15" id="tKJ-jH-Tcc"/>
+                            <constraint firstItem="Kat-zQ-bzc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="wje-FY-5B4"/>
+                            <constraint firstItem="F5w-7l-kWx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ztE-nk-eBQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

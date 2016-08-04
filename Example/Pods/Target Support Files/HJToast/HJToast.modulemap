@@ -1,0 +1,6 @@
+framework module HJToast {
+  umbrella header "HJToast-umbrella.h"
+
+  export *
+  module * { export * }
+}
