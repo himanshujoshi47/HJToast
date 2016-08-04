@@ -20,23 +20,46 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoH-pZ-AWj">
                                 <rect key="frame" x="251" y="50" width="99" height="30"/>
                                 <state key="normal" title="Show Themed"/>
+                                <connections>
+                                    <action selector="showThemed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dah-w5-HVP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-zQ-bzc">
                                 <rect key="frame" x="242" y="95" width="116" height="30"/>
                                 <state key="normal" title="Custom Duration"/>
+                                <connections>
+                                    <action selector="timedToast:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Am0-hq-vpU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q7-QN-xls">
                                 <rect key="frame" x="245" y="140" width="111" height="30"/>
                                 <state key="normal" title="Left Component"/>
+                                <connections>
+                                    <action selector="showLeftComponent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17i-fR-WfW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5w-7l-kWx">
                                 <rect key="frame" x="240" y="185" width="120" height="30"/>
                                 <state key="normal" title="Right Component"/>
+                                <connections>
+                                    <action selector="showRightComponent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6wW-Dp-SK5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smj-av-aYT">
                                 <rect key="frame" x="223" y="230" width="154" height="30"/>
                                 <state key="normal" title="Left-Right Component"/>
+                                <connections>
+                                    <action selector="showAllComponent:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QT4-Y1-FO2"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gky-Lh-L8a">
+                                <rect key="frame" x="366" y="95" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="f6W-vs-8hA"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,8 +68,10 @@
                             <constraint firstItem="Smj-av-aYT" firstAttribute="top" secondItem="F5w-7l-kWx" secondAttribute="bottom" constant="15" id="3Zr-vq-GWr"/>
                             <constraint firstItem="3Q7-QN-xls" firstAttribute="top" secondItem="Kat-zQ-bzc" secondAttribute="bottom" constant="15" id="3rK-NF-13d"/>
                             <constraint firstItem="Smj-av-aYT" firstAttribute="top" secondItem="F5w-7l-kWx" secondAttribute="bottom" constant="15" id="4N9-ex-oNI"/>
+                            <constraint firstItem="gky-Lh-L8a" firstAttribute="leading" secondItem="Kat-zQ-bzc" secondAttribute="trailing" constant="8" id="9s6-o2-ywn"/>
                             <constraint firstItem="F5w-7l-kWx" firstAttribute="top" secondItem="3Q7-QN-xls" secondAttribute="bottom" constant="15" id="CpW-as-1sO"/>
                             <constraint firstItem="3Q7-QN-xls" firstAttribute="top" secondItem="Kat-zQ-bzc" secondAttribute="bottom" constant="15" id="Hnl-vk-YYb"/>
+                            <constraint firstItem="gky-Lh-L8a" firstAttribute="centerY" secondItem="Kat-zQ-bzc" secondAttribute="centerY" id="PGW-bt-4gV"/>
                             <constraint firstItem="3Q7-QN-xls" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="QzQ-Dh-GZU"/>
                             <constraint firstItem="Smj-av-aYT" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="daO-rU-Ct9"/>
                             <constraint firstItem="Kat-zQ-bzc" firstAttribute="top" secondItem="qoH-pZ-AWj" secondAttribute="bottom" constant="15" id="gsW-vm-HfQ"/>
@@ -56,6 +81,9 @@
                             <constraint firstItem="F5w-7l-kWx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ztE-nk-eBQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timeField" destination="gky-Lh-L8a" id="F4E-b9-ySo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

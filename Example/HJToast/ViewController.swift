@@ -33,11 +33,14 @@
 import UIKit
 import HJToast
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var timeField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(endEditing(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,9 +48,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func endEditing(recognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
     
     @IBAction func showThemed(sender: AnyObject) {
+        view.endEditing(true)
+        
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/0255.0, blue: 12.0/255.0, alpha: 1.0)
         
@@ -55,14 +63,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func timedToast(sender: AnyObject) {
+        view.endEditing(true)
+        
         let toast = HJToast()
-        toast.toastDuration = 3.0
+        
+        let time = Double(timeField.text!)
+        if time != 0 {
+            toast.toastDuration = time
+        }
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
     }
     
     @IBAction func showLeftComponent(sender: AnyObject) {
+        view.endEditing(true)
+        
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
@@ -76,6 +92,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showRightComponent(sender: AnyObject) {
+        view.endEditing(true)
+        
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
@@ -89,6 +107,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAllComponent(sender: AnyObject) {
+        view.endEditing(true)
+        
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
@@ -106,6 +126,15 @@ class ViewController: UIViewController {
         toast.rightView = rightBtn
         
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
+    }
+    
+    //MARK: - UITextFieldDelegate Methods
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        if range.location == 1 {
+            return false
+        }
+        
+        return true
     }
 
 }
