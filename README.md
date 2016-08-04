@@ -14,7 +14,7 @@ Xcode 7.0+ and Swift 2.0
 
 ## Demo
 
-Coming soon.
+Coming soon..
 
 ## Adding HJToast to your project
 
