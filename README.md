@@ -1,6 +1,6 @@
 # HJToast
 
-[![CI Status](http://img.shields.io/travis/Himanshu Joshi/HJToast.svg?style=flat)](https://travis-ci.org/Himanshu Joshi/HJToast)
+[![CI Status](http://img.shields.io/travis/Himanshu%20Joshi/HJToast.svg?style=flat)](https://travis-ci.org/Himanshu Joshi/HJToast)
 [![Version](https://img.shields.io/cocoapods/v/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
 [![License](https://img.shields.io/cocoapods/l/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
 [![Platform](https://img.shields.io/cocoapods/p/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
@@ -11,6 +11,10 @@
 ## Requirements
 
 Xcode 7.0+ and Swift 2.0
+
+## Demo
+
+Coming soon.
 
 ## Adding HJToast to your project
 
