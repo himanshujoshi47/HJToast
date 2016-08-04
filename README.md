@@ -1,7 +1,6 @@
 # HJToast
 
 [![CI Status](http://img.shields.io/travis/himanshujoshi47/HJToast.svg?style=flat)](https://travis-ci.org/himanshujoshi47/HJToast)
-[![codecov](https://codecov.io/gh/himanshujoshi47/HJToast/branch/master/graph/badge.svg)](https://codecov.io/gh/himanshujoshi47/HJToast)
 [![Version](https://img.shields.io/cocoapods/v/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
 [![License](https://img.shields.io/cocoapods/l/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
 [![Platform](https://img.shields.io/cocoapods/p/HJToast.svg?style=flat)](http://cocoapods.org/pods/HJToast)
