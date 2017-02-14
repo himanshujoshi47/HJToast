@@ -48,12 +48,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func endEditing(recognizer: UITapGestureRecognizer) {
+    func endEditing(_ recognizer: UITapGestureRecognizer) {
         view.endEditing(true)
     }
     
     
-    @IBAction func showThemed(sender: AnyObject) {
+    @IBAction func showThemed(_ sender: AnyObject) {
         view.endEditing(true)
         
         let toast = HJToast()
@@ -62,7 +62,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
     }
     
-    @IBAction func timedToast(sender: AnyObject) {
+    @IBAction func timedToast(_ sender: AnyObject) {
         view.endEditing(true)
         
         let toast = HJToast()
@@ -76,52 +76,52 @@ class ViewController: UIViewController, UITextFieldDelegate {
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
     }
     
-    @IBAction func showLeftComponent(sender: AnyObject) {
+    @IBAction func showLeftComponent(_ sender: AnyObject) {
         view.endEditing(true)
         
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
-        let leftBtn = UIButton(type: .System)
-        leftBtn.setTitle("Left", forState: .Normal)
-        leftBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), forState: .Normal)
+        let leftBtn = UIButton(type: .system)
+        leftBtn.setTitle("Left", for: UIControlState())
+        leftBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), for: UIControlState())
         
         toast.leftView = leftBtn
         
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
     }
     
-    @IBAction func showRightComponent(sender: AnyObject) {
+    @IBAction func showRightComponent(_ sender: AnyObject) {
         view.endEditing(true)
         
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
-        let rightBtn = UIButton(type: .System)
-        rightBtn.setTitle("Right", forState: .Normal)
-        rightBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), forState: .Normal)
+        let rightBtn = UIButton(type: .system)
+        rightBtn.setTitle("Right", for: UIControlState())
+        rightBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), for: UIControlState())
         
         toast.rightView = rightBtn
         
         toast.bakeToast(withMessage: "Hey there! It's me...", inView: view)
     }
     
-    @IBAction func showAllComponent(sender: AnyObject) {
+    @IBAction func showAllComponent(_ sender: AnyObject) {
         view.endEditing(true)
         
         let toast = HJToast()
         toast.backgroundColor = UIColor(red: 191.0/255.0, green: 54.0/255.0, blue: 12.0/255.0, alpha: 1.0)
         
-        let leftBtn = UIButton(type: .System)
-        leftBtn.setTitle("Left", forState: .Normal)
-        leftBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), forState: .Normal)
+        let leftBtn = UIButton(type: .system)
+        leftBtn.setTitle("Left", for: UIControlState())
+        leftBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), for: UIControlState())
         
         toast.leftView = leftBtn
         
         
-        let rightBtn = UIButton(type: .System)
-        rightBtn.setTitle("Right", forState: .Normal)
-        rightBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), forState: .Normal)
+        let rightBtn = UIButton(type: .system)
+        rightBtn.setTitle("Right", for: UIControlState())
+        rightBtn.setTitleColor(UIColor(red: 255.0/255.0, green: 171.0/255.0, blue: 145.0/255.0, alpha: 1.0), for: UIControlState())
         
         toast.rightView = rightBtn
         
@@ -129,7 +129,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: - UITextFieldDelegate Methods
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if range.location == 1 {
             return false
         }

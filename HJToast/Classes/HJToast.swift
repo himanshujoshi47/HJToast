@@ -31,27 +31,27 @@
 
 import UIKit
 
-public class HJToast: UIView {
+open class HJToast: UIView {
     
     // Exposed properties
-    public var font: UIFont = UIFont.systemFont(ofSize: 12.0)
-    public var textColor: UIColor = UIColor.white
-    public var textAlignment: NSTextAlignment = .center
-    public var leftView: UIView?
-    public var rightView: UIView?
-    public var toastDuration: TimeInterval?
-    public var animateDuration: TimeInterval = 0.25
-    public var edgeInsets: UIEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
+    open var font: UIFont = UIFont.systemFont(ofSize: 12.0)
+    open var textColor: UIColor = UIColor.white
+    open var textAlignment: NSTextAlignment = .center
+    open var leftView: UIView?
+    open var rightView: UIView?
+    open var toastDuration: TimeInterval?
+    open var animateDuration: TimeInterval = 0.25
+    open var edgeInsets: UIEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
     
     
     
     // Private properties
-    private var _label: UILabel!
-    private var _haveLeftView: Bool = false
-    private var _haveRightView: Bool = false
-    private var _bottomConstraint: NSLayoutConstraint!
+    fileprivate var _label: UILabel!
+    fileprivate var _haveLeftView: Bool = false
+    fileprivate var _haveRightView: Bool = false
+    fileprivate var _bottomConstraint: NSLayoutConstraint!
     
-    public func bakeToast(withMessage msg: String, inView: UIView) {
+    open func bakeToast(withMessage msg: String, inView: UIView) {
         
         commonInit()
         
@@ -100,7 +100,7 @@ public class HJToast: UIView {
         
     }
     
-    private func commonInit() {
+    fileprivate func commonInit() {
         
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -215,7 +215,7 @@ public class HJToast: UIView {
         
     }
     
-    private func slideUp() {
+    fileprivate func slideUp() {
         layoutIfNeeded()
         _bottomConstraint.constant = 0
         
@@ -228,7 +228,7 @@ public class HJToast: UIView {
         
     }
     
-    private func slideDown() {
+    fileprivate func slideDown() {
         layoutIfNeeded()
         _bottomConstraint.constant = bounds.height
         
