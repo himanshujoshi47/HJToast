@@ -34,13 +34,13 @@ import UIKit
 public class HJToast: UIView {
     
     // Exposed properties
-    public var font: UIFont = UIFont.systemFontOfSize(12.0)
-    public var textColor: UIColor = UIColor.whiteColor()
-    public var textAlignment: NSTextAlignment = .Center
+    public var font: UIFont = UIFont.systemFont(ofSize: 12.0)
+    public var textColor: UIColor = UIColor.white
+    public var textAlignment: NSTextAlignment = .center
     public var leftView: UIView?
     public var rightView: UIView?
-    public var toastDuration: NSTimeInterval?
-    public var animateDuration: NSTimeInterval = 0.25
+    public var toastDuration: TimeInterval?
+    public var animateDuration: TimeInterval = 0.25
     public var edgeInsets: UIEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10)
     
     
@@ -58,43 +58,43 @@ public class HJToast: UIView {
         _label.text = msg
         _label.sizeToFit()
         
-        frame = CGRectMake(0, 0, inView.bounds.width, _label.bounds.height + edgeInsets.top + edgeInsets.bottom)
+        frame = CGRect(x: 0, y: 0, width: inView.bounds.width, height: _label.bounds.height + edgeInsets.top + edgeInsets.bottom)
         
         inView.addSubview(self)
         
         _bottomConstraint = NSLayoutConstraint(item: self,
-                                               attribute: .Bottom,
-                                               relatedBy: .Equal,
+                                               attribute: .bottom,
+                                               relatedBy: .equal,
                                                toItem: inView,
-                                               attribute: .Bottom,
+                                               attribute: .bottom,
                                                multiplier: 1.0,
                                                constant: bounds.height)
         
         inView.addConstraint(_bottomConstraint)
         
         inView.addConstraint(NSLayoutConstraint(item: self,
-            attribute: .Trailing,
-            relatedBy: .Equal,
-            toItem: inView,
-            attribute: .Trailing,
-            multiplier: 1.0,
-            constant: 0.0))
+                                                attribute: .trailing,
+                                                relatedBy: .equal,
+                                                toItem: inView,
+                                                attribute: .trailing,
+                                                multiplier: 1.0,
+                                                constant: 0.0))
         
         inView.addConstraint(NSLayoutConstraint(item: self,
-            attribute: .Leading,
-            relatedBy: .Equal,
-            toItem: inView,
-            attribute: .Leading,
-            multiplier: 1.0,
-            constant: 0.0))
+                                                attribute: .leading,
+                                                relatedBy: .equal,
+                                                toItem: inView,
+                                                attribute: .leading,
+                                                multiplier: 1.0,
+                                                constant: 0.0))
         
         inView.addConstraint(NSLayoutConstraint(item: self,
-            attribute: .Height,
-            relatedBy: .Equal,
-            toItem: nil,
-            attribute: .NotAnAttribute,
-            multiplier: 1.0,
-            constant: bounds.height))
+                                                attribute: .height,
+                                                relatedBy: .equal,
+                                                toItem: nil,
+                                                attribute: .notAnAttribute,
+                                                multiplier: 1.0,
+                                                constant: bounds.height))
         
         slideUp()
         
@@ -103,7 +103,7 @@ public class HJToast: UIView {
     private func commonInit() {
         
         translatesAutoresizingMaskIntoConstraints = false
-    
+        
         
         // Adding leftView, if provided
         if let _leftView = leftView {
@@ -113,26 +113,26 @@ public class HJToast: UIView {
             addSubview(_leftView)
             
             let leftViewCenterY = NSLayoutConstraint(item: _leftView,
-                                                     attribute: .CenterY,
-                                                     relatedBy: .Equal,
+                                                     attribute: .centerY,
+                                                     relatedBy: .equal,
                                                      toItem: self,
-                                                     attribute: .CenterY,
+                                                     attribute: .centerY,
                                                      multiplier: 1.0,
                                                      constant: 0.0)
             
             let leftViewLeading = NSLayoutConstraint(item: _leftView,
-                                                     attribute: .Leading,
-                                                     relatedBy: .Equal,
+                                                     attribute: .leading,
+                                                     relatedBy: .equal,
                                                      toItem: self,
-                                                     attribute: .Leading,
+                                                     attribute: .leading,
                                                      multiplier: 1.0,
                                                      constant: edgeInsets.left)
             
             let leftViewWidth = NSLayoutConstraint(item: _leftView,
-                                                   attribute: .Width,
-                                                   relatedBy: .Equal,
+                                                   attribute: .width,
+                                                   relatedBy: .equal,
                                                    toItem: nil,
-                                                   attribute: .NotAnAttribute,
+                                                   attribute: .notAnAttribute,
                                                    multiplier: 1.0,
                                                    constant: 0)
             leftViewWidth.priority = 1
@@ -151,26 +151,26 @@ public class HJToast: UIView {
             
             
             let rightViewCenterY = NSLayoutConstraint(item: _rightView,
-                                                      attribute: .CenterY,
-                                                      relatedBy: .Equal,
+                                                      attribute: .centerY,
+                                                      relatedBy: .equal,
                                                       toItem: self,
-                                                      attribute: .CenterY,
+                                                      attribute: .centerY,
                                                       multiplier: 1.0,
                                                       constant: 0.0)
             
             let rightViewTrailing = NSLayoutConstraint(item: _rightView,
-                                                       attribute: .Trailing,
-                                                       relatedBy: .Equal,
+                                                       attribute: .trailing,
+                                                       relatedBy: .equal,
                                                        toItem: self,
-                                                       attribute: .Trailing,
+                                                       attribute: .trailing,
                                                        multiplier: 1.0,
                                                        constant: -edgeInsets.right)
             
             let rightViewWidth = NSLayoutConstraint(item: _rightView,
-                                                    attribute: .Width,
-                                                    relatedBy: .Equal,
+                                                    attribute: .width,
+                                                    relatedBy: .equal,
                                                     toItem: nil,
-                                                    attribute: .NotAnAttribute,
+                                                    attribute: .notAnAttribute,
                                                     multiplier: 1.0,
                                                     constant: 0)
             rightViewWidth.priority = 1
@@ -180,38 +180,38 @@ public class HJToast: UIView {
         
         
         // Adding a label
-        _label = UILabel(frame: CGRectZero)
+        _label = UILabel(frame: CGRect.zero)
         _label.translatesAutoresizingMaskIntoConstraints = false
         _label.textColor = textColor
         _label.numberOfLines = 0
-        _label.lineBreakMode = .ByWordWrapping
+        _label.lineBreakMode = .byWordWrapping
         _label.font = font
         _label.textAlignment = textAlignment
         addSubview(_label)
         
         addConstraint(NSLayoutConstraint(item: _label,
-            attribute: .CenterY,
-            relatedBy: .Equal,
-            toItem: self,
-            attribute: .CenterY,
-            multiplier: 1.0,
-            constant: 0.0))
+                                         attribute: .centerY,
+                                         relatedBy: .equal,
+                                         toItem: self,
+                                         attribute: .centerY,
+                                         multiplier: 1.0,
+                                         constant: 0.0))
         
         addConstraint(NSLayoutConstraint(item: _label,
-            attribute: .Trailing,
-            relatedBy: .Equal,
-            toItem: _haveRightView ? rightView : self,
-            attribute:  _haveRightView ? .Leading : .Trailing,
-            multiplier: 1.0,
-            constant: -edgeInsets.right))
+                                         attribute: .trailing,
+                                         relatedBy: .equal,
+                                         toItem: _haveRightView ? rightView : self,
+                                         attribute:  _haveRightView ? .leading : .trailing,
+                                         multiplier: 1.0,
+                                         constant: -edgeInsets.right))
         
         addConstraint(NSLayoutConstraint(item: _label,
-            attribute: .Leading,
-            relatedBy: .Equal,
-            toItem: _haveLeftView ? leftView : self,
-            attribute: _haveLeftView ? .Trailing : .Leading,
-            multiplier: 1.0,
-            constant: edgeInsets.left))
+                                         attribute: .leading,
+                                         relatedBy: .equal,
+                                         toItem: _haveLeftView ? leftView : self,
+                                         attribute: _haveLeftView ? .trailing : .leading,
+                                         multiplier: 1.0,
+                                         constant: edgeInsets.left))
         
     }
     
@@ -219,7 +219,7 @@ public class HJToast: UIView {
         layoutIfNeeded()
         _bottomConstraint.constant = 0
         
-        UIView.animateWithDuration(animateDuration, delay: 0.0, options: .CurveEaseInOut, animations: {
+        UIView.animate(withDuration: animateDuration, delay: 0.0, options: .curveEaseInOut, animations: {
             self.layoutIfNeeded()
         }) { (bol) in
             self.slideDown()
@@ -232,9 +232,9 @@ public class HJToast: UIView {
         layoutIfNeeded()
         _bottomConstraint.constant = bounds.height
         
-        let delay = toastDuration == nil ? Double(_label.text!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)) * 0.1 : toastDuration!
+        let delay = toastDuration == nil ? Double(_label.text!.lengthOfBytes(using: String.Encoding.utf8)) * 0.1 : toastDuration!
         
-        UIView.animateWithDuration(animateDuration, delay: delay, options: .CurveEaseInOut, animations: {
+        UIView.animate(withDuration: animateDuration, delay: delay, options: .curveEaseInOut, animations: {
             self.layoutIfNeeded()
         }) { (bol) in
             self.removeFromSuperview()
